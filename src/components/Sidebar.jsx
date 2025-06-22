@@ -44,7 +44,7 @@ const Sidebar = () => {
 
         {/* Nav items */}
         <nav className="flex flex-col gap-2">
-          <div className="flex items-center justify-center  mt-4 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700  transition" onClick={()=>{
+          <div className="flex items-center justify-center p-2  mt-4 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700  transition" onClick={()=>{
             setTheme(theme === 'dark' ? 'light' : 'dark');
           }}>
             <DarkModeSwitch
