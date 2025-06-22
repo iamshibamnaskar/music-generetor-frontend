@@ -6,7 +6,7 @@ const PreviousPage = () => {
     useEffect(() => {
         const existing = JSON.parse(localStorage.getItem('previous')) || [];
         console.log(existing)
-        Setsongs(existing)
+        Setsongs(existing.reverse())
     }, [])
 
     return (

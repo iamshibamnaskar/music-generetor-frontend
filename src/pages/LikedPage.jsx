@@ -6,7 +6,7 @@ const LikedPage = () => {
     useEffect(() => {
         const existing = JSON.parse(localStorage.getItem('liked')) || [];
         console.log(existing)
-        Setsongs(existing)
+        Setsongs(existing.reverse())
     }, [])
 
     return (
